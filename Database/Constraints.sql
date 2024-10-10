@@ -1,0 +1,7 @@
+ALTER TABLE Employee ADD
+    CONSTRAINT CK_SEX59
+    CHECK( STATUS IN('M','F','?'))
+
+ALTER TABLE Employee ADD
+    CONSTRAINT CK_StatusCode59
+    CHECK( STATUS IN('0','1','2','N'))
